@@ -30,3 +30,6 @@ I'm the type of person that if you ask me a question and I don't know the answer
   - [Школа itProger](https://www.youtube.com/channel/UCCXF68Da_ndcmvv_9OG75Cw)
   - RS JS/FE Pre-School 2022(in process)
 ----
+##Languages
+**English:** **B1** (I've learned English in the University and [SkyEng](https://skyeng.ru/))
+**Polish:** **B1** (I've lived in Poland for 2 years)
