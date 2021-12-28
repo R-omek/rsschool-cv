@@ -39,6 +39,6 @@ I'm the type of person that if you ask me a question and I don't know the answer
 
 ## Languages
 
-**English:** **B1** (I've learned English in the University and [SkyEng](https://skyeng.ru/))
+**English:** **B1** (I've learned English at the University and [SkyEng](https://skyeng.ru/))
 
 **Polish:** **B1** (I've lived in Poland for 2 years)
