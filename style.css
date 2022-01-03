@@ -1,0 +1,358 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+html {
+    scroll-behavior: smooth; 
+  }
+
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: #696969;
+}
+.nav_list, .nav_list a{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 45px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.nav_list {
+    padding-right: 70px;
+}
+.nav_items {
+    text-decoration: none;
+    background-image: linear-gradient(rgb(5, 5, 5), currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .7s;
+}
+.nav_items:hover {
+    background-size: 100% 2px;    
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+.main_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0px 100px 0 80px;
+    column-gap: 40px;
+}
+
+
+.section_avatar {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+}
+.avatar {
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+.img_avatar:hover {
+    cursor: pointer;
+}
+.img_avatar {
+    height: 100%;
+    width: 100%;
+}
+
+
+.name {
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    height: 220px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+.name h1 {
+    width: 100vh;
+}
+.name h3 {
+    font-size: 21px;
+    color: #696969;
+    margin-bottom: 50px;
+    padding-bottom: 70px;
+}
+
+
+.section_contacts {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    padding: 10px;
+    height: 220px;
+    margin: 50px 0 0 0;
+}
+.list_contacts {
+    display: grid;
+    gap: 10px;
+    list-style: none;
+    margin: 10px 0 0 20px;
+    color: black;
+}
+.contacts_item3 a, .contacts_item4 a {
+    color: black;
+    text-decoration: none;
+}
+.contacts_item3 a:hover, .contacts_item4 a:hover {
+    text-decoration: underline;
+}
+.contacts_item1 b:before {
+    content: "";
+    background: url("assets/img/location_icon.png") no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin:3px 5px 0 0;
+}
+.contacts_item2 b:before {
+    content: "";
+    background: url("assets/img/emailicon.png") no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin:3px 5px 0 0;
+}
+.contacts_item3 b:before {
+    content: "";
+    background: url("assets/img/githubicon.png") no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 5px;
+}
+.contacts_item4 b:before {
+    content: "";
+    background: url("assets/img/telegram_icon.png") no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin:3px 5px 0 0;
+}
+.contacts_item5 b:before {
+    content: "";
+    background: url("assets/img/discord_icon.png") no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin:3px 5px 0 0;
+}
+
+
+.about_me {
+    padding-top: 10px;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: solid 1px #672f2f;
+    border-top: solid 1px #672f2f;
+    margin-top: 50px;
+}
+.about_me p {
+    font-size: 21px;
+    line-height: 38px;
+    margin: 40px 0 0 20px;
+    color: rgb(92, 90, 90);
+}
+
+
+.skills {
+    padding-top: 20px;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: solid 1px #672f2f;
+    border-top: solid 1px #672f2f;
+}
+.skills_list {
+    line-height: 32px;
+    margin-left: 45px;
+}
+.skills_items {
+    margin-left: 20px;
+}
+
+
+.code_section {
+    padding-top: 10px;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: solid 1px #672f2f;
+}
+.code_item {
+    color: rgb(90, 88, 88);
+}
+
+
+.education {
+    padding-top: 20px;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+}
+.education_list {
+    line-height: 32px;
+    margin-left: 45px;
+}
+.education_items {
+    margin-left: 20px;
+}
+.education_item1, .education_item1 a, .education_items a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+
+}
+.education_items:hover {
+    font-size: 110%;
+}
+
+
+
+.languages {
+    padding-top: 20px;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+}
+.languages_list {
+    line-height: 32px;
+    margin-left: 45px;
+}
+.languages_items {
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+
+
+.footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        height: 80px;
+        width: 100%;
+        background-color: #696969;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 50px;
+}
+.footer img {
+    width: 100px;
+    height: 60px;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+.footer a, .footer h2 {
+    opacity: 0.9;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .main_container {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+
+
+    .nav_list {
+        gap: 15px;
+        padding-right: 10px;
+    }
+
+
+
+    .name {
+        border-bottom: solid rgb(124, 123, 123) 10px;
+    }
+    .name h3 {
+        margin-top: -10px;
+    }
+
+
+
+    .section_contacts {
+        border: none;
+        margin: 0;
+    }
+    .list_contacts {
+        margin-top: 20px;
+    }
+
+
+
+    .about_me {
+        margin-top: 10px;
+        border: none;
+        border-top: black solid 1px;
+    }
+
+
+
+    .skills {
+        border: none;
+        border-top: black solid 1px;
+    }
+    .skills_list {
+        margin-top: 20px;
+    }
+
+
+
+    .code_section {
+        margin: 20px 0 20px 0;
+        border: none;
+        border-top: black solid 1px;
+    }
+    .code_section pre {
+        position: relative;
+        left: -100px;
+        top: 20px;
+    }
+
+
+
+    .education {
+        margin-top: 20px;
+        border-top: black solid 1px;
+    }
+    .education_list {
+        margin-top: 20px;
+    }
+
+
+
+    .languages {
+        margin-top: 20px;
+        border-top: black solid 1px;
+    }
+    .languages_list {
+        margin-top: 20px;
+    }
+  }
