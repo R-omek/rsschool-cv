@@ -9,7 +9,12 @@ html {
     scroll-behavior: smooth; 
   }
 
-
+body {
+    width: 1100px;
+    margin: auto;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
 
 header {
     display: flex;
@@ -23,13 +28,13 @@ header {
     display: flex;
     list-style: none;
     text-decoration: none;
-    gap: 45px;
+    gap: 30px;
     font-size: 20px;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
 .nav_list {
-    padding-right: 70px;
+    padding-right: 50px;
 }
 .nav_items {
     text-decoration: none;
@@ -197,12 +202,13 @@ header {
 
 
 .code_section {
-    padding-top: 10px;
     font-size: 21px;
     font-family: 'Roboto', sans-serif;
     border-bottom: solid 1px #672f2f;
 }
 .code_item {
+    position: relative;
+    right: 50%;
     color: rgb(90, 88, 88);
 }
 
@@ -211,6 +217,7 @@ header {
     padding-top: 20px;
     font-size: 21px;
     font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid black;
 }
 .education_list {
     line-height: 32px;
@@ -226,7 +233,8 @@ header {
 
 }
 .education_items:hover {
-    font-size: 110%;
+    transform:scale(1.1);
+    transition: 0.5s;
 }
 
 
@@ -235,12 +243,30 @@ header {
     padding-top: 20px;
     font-size: 21px;
     font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid black;
 }
 .languages_list {
     line-height: 32px;
     margin-left: 45px;
 }
 .languages_items {
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+.work-exp {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    padding-top: 20px;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+}
+.work-exp-list {
+    line-height: 32px;
+    margin-left: 45px;
+}
+.work-exp-item {
     line-height: 40px;
     margin-left: 20px;
 }
@@ -256,8 +282,6 @@ header {
         width: 100%;
         background-color: #696969;
         margin-top: 20px;
-        padding-left: 20px;
-        padding-right: 50px;
 }
 .footer img {
     width: 100px;
@@ -267,8 +291,9 @@ header {
 }
 .footer a, .footer h2 {
     opacity: 0.9;
-    color: black;
+    color: white;
     text-decoration: none;
+    
 }
 
 
