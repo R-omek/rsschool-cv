@@ -10,99 +10,136 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="nav_list">
-                <li class="nav_items"><a href="#contacts"> Contacts</a></li>
-                <li class="nav_items"><a href="#about_me"> About Me</a></li>
-                <li class="nav_items"><a href="#skills"> Skills</a></li>
-                <li class="nav_items"><a href="#projects"> Projects</a></li>
-                <li class="nav_items"><a href="#education"> Education</a></li>
-                <li class="nav_items"><a href="#languages"> Languages</a></li>
-                <li class="nav_items"><a href="#work-exp"> Work Experience</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="main_container">
-            <section class="section_avatar"><div class="avatar"><a href="https://www.instagram.com/romanhrytsiuk/"><img title="instagram" class="img_avatar" src="assets\img\avatar.jpg" alt="avatar"></a></div></section>
-            <section class="name">
-                <h1>ROMAN HRYTSIUK</h1>
-                <h3>FRONT-END DEVELOPER</h3>
-            </section>
+    <div class="container">
+        <header>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label onclick="deleteScrll()" class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                  <li><a onclick="hideBurgMenu()" class="menu__item active" href="#contacts">Contacts</a></li>
+                  <li><a class="menu__item" href="#about_me">About Me</a></li>
+                  <li><a onclick="hideBurgMenu()" class="menu__item" href="#skills">Skills</a></li>
+                  <li><a onclick="hideBurgMenu()" class="menu__item" href="#projects">Projects</a></li>
+                  <li><a onclick="hideBurgMenu()" class="menu__item" href="#education">Education</a></li>
+                  <li><a onclick="hideBurgMenu()" class="menu__item" href="#languages">Languages</a></li>
+                  <li><a onclick="hideBurgMenu()" class="menu__item" href="#work-exp">Work Experiance</a></li>
+                  <li><a onclick="hideBurgMenu()" class="menu__item" href="#interests">Interests</a></li>
 
-            <section class="section_contacts" id="contacts"><h3>CONTACTS</h3>
-                <ul class="list_contacts">
-                    <li class="contacts_item1"><b>Kyiv, Ukraine.</b></li>
-                    <li class="contacts_item2"><b>Email:</b> rmngrck97@gmail.com</li>
-                    <li class="contacts_item3"><b>Github:</b><a href="https://github.com/R-omek"> R-omek</a></li>
-                    <li class="contacts_item4"><b>Telegram:</b><a href="https://t.me/Roma_Hrytsiuk"> @Roma_Hrytsiuk</a></li>
-                    <li class="contacts_item5"><b>Discord:</b> Roman Hrytsiuk#8810</li>
                 </ul>
-            </section>
+              </div>
+              
+            <nav>
+                <ul class="nav_list">
+                    <li class="nav_items"><a href="#contacts"> Contacts</a></li>
+                    <li class="nav_items"><a href="#about_me"> About Me</a></li>
+                    <li class="nav_items"><a href="#skills"> Skills</a></li>
+                    <li class="nav_items"><a href="#projects"> Projects</a></li>
+                    <li class="nav_items"><a href="#education"> Education</a></li>
+                    <li class="nav_items"><a href="#languages"> Languages</a></li>
+                    <li class="nav_items"><a href="#work-exp"> Work Experience</a></li>
+                    <li class="nav_items"><a href="#interests"> Interests</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="main_container">
+                <section class="section_avatar"><div class="avatar"><a href="https://www.instagram.com/romanhrytsiuk/"><img title="instagram" class="img_avatar" src="assets\img\avatar.jpg" alt="avatar"></a></div></section>
+                <section class="name">
+                    <h1>ROMAN HRYTSIUK</h1>
+                    <h3>FRONT-END DEVELOPER</h3>
+                </section>
 
-            <section class="about_me" id="about_me"><h3>About Me<p><i>I'm the type of person that if you ask me a question and I don't know the answer, I'm gonna tell you that I don't know. But I bet you what, I know how to find the answer and I will find the answer.</i></p></h3></section>
-
-            <section class="skills" id="skills"><h3>SKILLS</h3>
-               <ul class="skills_list">
-                   <li><span><b>Web-development:</b></span>
-                       <ul>
-                           <li class="skills_items">HTML5</li>
-                           <li class="skills_items">CSS3</li>
-                           <li class="skills_items">JavaScript</li>
-                       </ul>
-                    <li><span><b>Version control:</b></span></li>
-                       <ul>
-                           <li class="skills_items">Git, Github, GitLab</li>
-                       </ul>
-                   </li>
-               </ul>
-            </section>
-
-            <section class="education" id="projects"><h3>PROJECTS</h3>
-                        <ul class="education_list">
-                            <li class="education_items"><a href="https://r-omek.github.io/Photographer-s_portfolio/portfolio/">Photographer's portfolio</a></li>
-                            <li class="education_items"><a href="https://r-omek.github.io/Memory-game/memory-game/">Memory-game using locale storage</a></li>
-                        </ul>
-            </section>
-
-            <section class="education" id="education"><h3>EDUCATION</h3>
-                    <ul class="education_list">
-                        <li><b>University</b>
-                            <ul>
-                                <li class="education_item1"><a href="https://knute.edu.ua/?en"> KYIV NATIONAL UNIVERSITY OF TRADE AND ECONOMICS. Marketing major</a></li>
-                            </ul>
-                        </li>
-                        <li><b>Courses</b>
-                        <ul>
-                            <li class="education_items"><a href="https://code-basics.com/"> Code Basics</a></li>
-                            <li class="education_items"><a href="https://itproger.com/"> School itProger</a></li>
-                            <li class="education_items"><a href="https://rs.school/js/"> JS/FE Pre-School 2022.</a></li>
-                            <li class="education_items"><a href="https://rs.school/js/"> JS/FE RSSchoolQ1 2022(In progress).</a></li>
-                        </ul>
-                        </li>
+                <section class="section_contacts" id="contacts"><h3>CONTACTS</h3>
+                    <ul class="list_contacts">
+                        <li class="contacts_item1"><b>Kyiv, Ukraine.</b></li>
+                        <li class="contacts_item2"><b>Email:</b> rmngrck97@gmail.com</li>
+                        <li class="contacts_item3"><b>Github:</b><a href="https://github.com/R-omek"> R-omek</a></li>
+                        <li class="contacts_item4"><b>Telegram:</b><a href="https://t.me/Roma_Hrytsiuk"> @Roma_Hrytsiuk</a></li>
+                        <li class="contacts_item5"><b>Discord:</b> Roman Hrytsiuk#8810</li>
                     </ul>
-            </section>
+                </section>
 
-            <section class="languages" id="languages"><h3>LANGUAGES</h3>
-                <ul class="languages_list">
-                    <li class="languages_items"><b>English: B1</b></li>
-                    <li class="languages_items"><b>Polish: B1</b></li>
-                </ul>
-            </section>
-            <section class="work-exp" id="work-exp"><h3>WORK EXPERIENCE</h3>
-                <ul class="work-exp-list">
-                    <li class="work-exp-item"><b>(November 2018 - september 2019) - Sales manager in SkyEng school.</b></li>
-                    <li class="work-exp-item"><b>(December 2019 - October 2021) - Team coordinator in Eurocash(Poland). Responsibility:</b> managing team work, working with documantation, recruiting new people. </li>
-                </ul>
-            </section>
-        </div>
-    </main>
+                <section class="about_me" id="about_me"><h3>About Me<p><i>I'm the type of person that if you ask me a question and I don't know the answer, I'm gonna tell you that I don't know. But I bet you what, I know how to find the answer and I will find the answer.</i></p></h3></section>
 
-    <footer>
-        <section class="footer">
-            <h2>&copy 2022</h2>
-        </section>
-    </footer>
+                <section class="skills" id="skills"><h3>SKILLS</h3>
+                <ul class="skills_list">
+                    <li><span><b>Web-development:</b></span>
+                        <ul>
+                            <li class="skills_items">HTML5</li>
+                            <li class="skills_items">CSS3/SASS/SCSS</li>
+                            <li class="skills_items">JavaScript</li>
+                            <li class="skills_items">Webpack</li>
+                            <li class="skills_items">Node.js</li>
+
+                        </ul>
+                        <li><span><b>Version control:</b></span></li>
+                        <ul>
+                            <li class="skills_items">Git, Github, GitLab</li>
+                        </ul>
+                    </li>
+                </ul>
+                </section>
+
+                <section class="education" id="projects"><h3>PROJECTS</h3>
+                            <ul class="education_list">
+                                <li class="education_items"><a href="https://r-omek.github.io/Photographer-s_portfolio/portfolio/">Photographer's portfolio</a></li>
+                                <li class="education_items"><a href="https://rolling-scopes-school.github.io/r-omek-JSFE2022Q1/shelter/">Web-page</a></li>
+                                <li class="education_items"><a href="https://rolling-scopes-school.github.io/r-omek-JSFE2022Q1/virtual-keyboard/">Virtual-keyboard</a></li>
+                                <li class="education_items"><a href="https://r-omek.github.io/Memory-game/memory-game/">Memory-game using locale storage</a></li>
+                                
+                            </ul>
+                </section>
+
+                <section class="education" id="education"><h3>EDUCATION</h3>
+                        <ul class="education_list">
+                            <li><b>University</b>
+                                <ul>
+                                    <li class="education_item1"><a href="https://knute.edu.ua/?en"> KYIV NATIONAL UNIVERSITY OF TRADE AND ECONOMICS. Marketing major</a></li>
+                                </ul>
+                            </li>
+                            <li><b>Courses</b>
+                            <ul>
+                                <li class="education_items"><a href="https://code-basics.com/"> Code Basics</a></li>
+                                <li class="education_items"><a href="https://itproger.com/"> School itProger</a></li>
+                                <li class="education_items"><a href="https://rs.school/js/"> JS/FE Pre-School 2022.</a></li>
+                                <li class="education_items"><a href="https://rs.school/js/"> JS/FE RSSchoolQ1 2022(In progress).</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+                </section>
+
+                <section class="languages" id="languages"><h3>LANGUAGES</h3>
+                    <ul class="languages_list">
+                        <li class="languages_items"><b>English: B1</b></li>
+                        <li class="languages_items"><b>Polish: B1</b></li>
+                    </ul>
+                </section>
+                <section class="work-exp" id="work-exp"><h3>WORK EXPERIENCE</h3>
+                    <ul class="work-exp-list">
+                        <li class="work-exp-item"><b>(November 2018 - september 2019) - Sales manager in SkyEng school.</b></li>
+                        <li class="work-exp-item"><b>(December 2019 - October 2021) - Team coordinator in Eurocash(Poland). Responsibility:</b> managing team work, working with documantation, recruiting new people. </li>
+                    </ul>
+                </section>
+
+                <section class="section_interests" id="interests"><h3>INTERESTS</h3>
+                    <ul class="list_interests">
+                        <li class="interests_item1">Basketball</li>
+                        <li class="interests_item2">Computer games</li>
+                        <li class="interests_item3">Traveling</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <section class="footer">
+                <h2>&copy 2022</h2>
+            </section>
+        </footer>
+</div>
+
+<script src="index.js"></script>
 </body>
 </html>
