@@ -296,7 +296,6 @@ header {
     padding-top: 20px;
     font-size: 21px;
     font-family: 'Roboto', sans-serif;
-    border-bottom: 1px solid black;
 }
 .education_list {
     line-height: 32px;
@@ -322,6 +321,7 @@ header {
     padding-top: 20px;
     font-size: 21px;
     font-family: 'Roboto', sans-serif;
+    border-top: solid 1px #672f2f;
 }
 .languages_list {
     line-height: 32px;
@@ -336,6 +336,7 @@ header {
     padding-top: 20px;
     font-size: 21px;
     font-family: 'Roboto', sans-serif;
+    border-bottom: solid 1px #672f2f;
 }
 .work-exp-list {
     line-height: 32px;
@@ -518,7 +519,7 @@ header {
     .main_container {
         margin: 0;
     }
-    
+
   }
   @media screen and (max-width: 375px) {
 
