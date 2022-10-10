@@ -1,3 +1,2 @@
-# rsschool-cv
-https://github.com/R-omek/rsschool-cv/blob/gh-pages/cv.md /n
+# cv
 https://r-omek.github.io/rsschool-cv/
