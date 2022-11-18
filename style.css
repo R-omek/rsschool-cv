@@ -161,9 +161,7 @@ header {
     width: 200px;
     border-radius: 100px;
 }
-.img_avatar:hover {
-    cursor: pointer;
-}
+
 .img_avatar {
     height: 100%;
     width: 100%;
@@ -192,15 +190,14 @@ header {
 .section_contacts {
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
-    padding: 10px;
-    height: 100%;
+    padding-top: 10px;
     margin: 50px 0 0 0;
 }
 .list_contacts {
     display: grid;
     gap: 10px;
     list-style: none;
-    margin: 10px 0 0 20px;
+    margin: 10px 0 20px 15px;
     color: black;
 }
 .contacts_item3 a, .contacts_item4 a {
@@ -268,7 +265,7 @@ header {
 .about_me p {
     font-size: 21px;
     line-height: 38px;
-    margin: 40px 0 0 20px;
+    margin: 20px 0 0 20px;
     color: rgb(92, 90, 90);
 }
 
@@ -282,23 +279,16 @@ header {
 }
 .skills_list {
     line-height: 32px;
-    margin-left: 45px;
+    margin-left: 15px;
 }
 .skills_items {
     margin-left: 20px;
+    font-weight: bold;
+
 }
 
 
-.code_section {
-    font-size: 21px;
-    font-family: 'Roboto', sans-serif;
-    border-bottom: solid 1px #672f2f;
-}
-.code_item {
-    position: relative;
-    right: 50%;
-    color: rgb(90, 88, 88);
-}
+
 
 
 .education {
@@ -309,21 +299,13 @@ header {
 }
 .education_list {
     line-height: 32px;
-    margin-left: 45px;
+    margin-left: 15px;
 }
 .education_items {
+    font-weight: bold;
     margin-left: 20px;
 }
-.education_item1, .education_item1 a, .education_items a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: black;
 
-}
-.education_items:hover {
-    transform:scale(1.1);
-    transition: 0.5s;
-}
 
 
 
@@ -331,11 +313,10 @@ header {
     padding-top: 20px;
     font-size: 21px;
     font-family: 'Roboto', sans-serif;
-    border-bottom: 1px solid black;
 }
 .languages_list {
     line-height: 32px;
-    margin-left: 45px;
+    margin-left: 15px;
 }
 .languages_items {
     line-height: 40px;
@@ -349,44 +330,12 @@ header {
 }
 .work-exp-list {
     line-height: 32px;
-    margin-left: 45px;
+    margin-left: 15px;
 }
 .work-exp-item {
     line-height: 40px;
     margin-left: 20px;
 }
-
-.section_interests{
-    font-family: 'Roboto', sans-serif;
-    font-size: 21px;
-    padding: 10px;
-    height: 220px;
-    margin: 10px 0 0 0;
-}
-.list_interests {
-    display: grid;
-    gap: 10px;
-    list-style: none;
-    margin: 10px 0 0 20px;
-    color: black;
-}
-.interests_item1:before,
-.interests_item2:before,
-.interests_item3:before {
-    content: "";
-    background: url("assets/img/location_icon.png") no-repeat;
-    display: block;
-    width: 20px;
-    height: 20px;
-    float: left;
-    margin:3px 5px 0 0;
-}
-.interests_item1:before {
-    background: url("assets/img/location_icon.png") no-repeat;
-}
-
-
-
 
 .footer {
         display: flex;
@@ -474,22 +423,13 @@ header {
 
 
 
-    .code_section {
-        margin: 20px 0 20px 0;
-        border: none;
-        border-top: black solid 1px;
-    }
-    .code_section pre {
-        position: relative;
-        left: -100px;
-        top: 20px;
-    }
 
 
 
     .education {
         margin-top: 20px;
         border-top: black solid 1px;
+        border-bottom: none;
     }
     .education_list {
         margin-top: 20px;
@@ -501,6 +441,7 @@ header {
         margin-top: 20px;
         border-top: black solid 1px;
     }
+
     .languages_list {
         margin-top: 20px;
     }
