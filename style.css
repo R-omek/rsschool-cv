@@ -295,7 +295,6 @@ header {
     padding-top: 20px;
     font-size: 21px;
     font-family: 'Roboto', sans-serif;
-    border-bottom: 1px solid black;
 }
 .education_list {
     line-height: 32px;
@@ -327,6 +326,7 @@ header {
     padding-top: 20px;
     font-size: 21px;
     font-family: 'Roboto', sans-serif;
+    border-bottom: solid 1px #672f2f;
 }
 .work-exp-list {
     line-height: 32px;
@@ -360,21 +360,64 @@ header {
     
 }
 
+.popup {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 1000%;
+    background-color: #000000;
+    opacity: 0.3;
+}
+.popup:hover {
+    cursor: pointer;
+}
+.popup-showed {
+    display: block;
+}
+.hiddenScroll {
+    overflow-y: hidden;
+}
+
 @media screen and (max-width: 1000px) {
 
     .nav_list {
         display: none;
     }
     .menu__btn {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hamburger-menu {
+        display: flex;
     }
     
 }
 
 @media screen and (max-width: 768px) {
+    .name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        border-bottom: solid rgb(124, 123, 123) 7px;
+    }
+    .name h3 {
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .container {
+        padding: 0;
+    }
     .main_container {
         display: grid;
         grid-template-columns: 100%;
+        margin: 0px 20px 0 20px;
     }
 
 
@@ -383,16 +426,6 @@ header {
         gap: 15px;
         padding-right: 10px;
     }
-
-
-
-    .name {
-        border-bottom: solid rgb(124, 123, 123) 10px;
-    }
-    .name h3 {
-        margin-top: -10px;
-    }
-
 
 
     .section_contacts {
@@ -416,6 +449,7 @@ header {
     .skills {
         border: none;
         border-top: black solid 1px;
+        border-bottom: black solid 1px;
     }
     .skills_list {
         margin-top: 20px;
@@ -440,9 +474,25 @@ header {
     .languages {
         margin-top: 20px;
         border-top: black solid 1px;
+        border-bottom: black solid 1px;
     }
 
     .languages_list {
         margin-top: 20px;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .main_container {
+        margin: 0;
+    }
+
+  }
+  @media screen and (max-width: 375px) {
+
+    section.name > h1 {
+        text-align: center;
+    }
+
   }
